@@ -1,15 +1,22 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        a A = new a("codetree", 'L', 13);
+        Scanner sc = new Scanner(System.in);
+        String a1 = sc.next();
+        String a2 = sc.next();
+        int a3 = sc.nextInt();
+        
+        a A = new a(a1, a2, a3);
     }
 }
 
 class a {
     String s;
-    char a;
+    String a;
     int i;
 
-    public a(String secret, char place, int time){
+    public a(String secret, String place, int time){
         this.s = secret;
         this.a = place;
         this.i = time;
